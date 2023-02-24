@@ -20,11 +20,13 @@ export const Number = styled.span`
 `;
 export const Wrap = styled.div`
   display: flex;
-  width: 400px;
+  width: 200px;
   justify-content: space-between;
 `;
 
 export const ContactIcon = styled.img`
   width: 50px;
   border-radius: 50%;
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
 `;
