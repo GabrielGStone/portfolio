@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  width: 126.656%;
+  margin-left: -10vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 250px;
+  color: #fff;
+  background-color: #000;
   margin-top: 40px;
   font-size: 24px;
   font-weight: 600;
@@ -27,6 +31,6 @@ export const Wrap = styled.div`
 export const ContactIcon = styled.img`
   width: 50px;
   border-radius: 50%;
-  -webkit-filter: invert(100%); /* Safari/Chrome */
-  filter: invert(100%);
+  /* -webkit-filter: invert(100%); /* Safari/Chrome */
+  /* filter: invert(100%); */
 `;

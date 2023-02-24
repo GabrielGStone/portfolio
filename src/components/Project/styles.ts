@@ -41,6 +41,6 @@ export const VerticalLine = styled.div`
   width: 1px;
   background-color: #000;
   @media (max-width: 1000px) {
-    width: 0;
+    /* width: 0; */
   }
 `;

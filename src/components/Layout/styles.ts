@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 98vw;
   max-width: 100vw;
 
   @media (max-width: 1000px) {
-    min-height: 100vh;
-    height: auto;
+    /* min-height: 100vh;
+    height: auto; */
   }
 `;
 
@@ -16,7 +16,6 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   @media (max-width: 1000px) {
-    width: 100%;
-    padding: 0 20px;
+    /* width: 100%; */
   }
 `;
