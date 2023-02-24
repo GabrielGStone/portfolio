@@ -22,7 +22,7 @@ const Home = () => {
         {/* <ViewComponent> */}
         <Id id="Projects" />
 
-        <h2 style={{ marginTop: "56px" }}>Projects</h2>
+        <h2 style={{ marginTop: "64px" }}>Projects</h2>
         {/* </ViewComponent>
         <ViewComponent> */}
         <Project
