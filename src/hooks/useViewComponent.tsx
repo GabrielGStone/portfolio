@@ -7,6 +7,7 @@ interface ComponentProps {
 
 const ViewComponent: React.FC<ComponentProps> = ({ children }) => {
   const [showComponent, setShowComponent] = useState(false);
+  // eslint-disable-next-line
   const { ref, inView } = useInView({
     threshold: 0.5, // Define o quanto do componente deve estar visível antes de ser considerado "no viewport"
   });
