@@ -9,6 +9,11 @@ export const Container = styled.div`
   margin-top: 48px;
   min-height: 600px;
   @media (max-width: 1000px) {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    padding-bottom: 32px;
+    border-bottom: 1px #000 solid;
   }
 `;
 export const ProjectLink = styled.a`
@@ -31,6 +36,9 @@ export const ProjectText = styled.span`
   align-items: center;
   font-size: 22px;
   width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectTitle = styled.h3`

@@ -1,26 +1,20 @@
 import { images } from "./constants";
-import { Container, Title, Topic, Image, Wrap } from "./styles";
+import { Container, Title, Topic, Image, Wrap, About } from "./styles";
 
 const AboutMe = () => {
   return (
     <Container>
       <Title>About Me</Title>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <About style={{ display: "flex", justifyContent: "space-between" }}>
         <Wrap>
           <Topic>Professional:</Topic> My name is Gabriel, and I'm 24 years old.
-          I studied systems engineering at UTFPR, although I didn't complete the
-          program. Currently, I have nearly one year of experience working with
-          React and TypeScript. I'm proficient in HTML, CSS, JavaScript, Redux,
-          styled-components, and Material UI. I have experience working in
-          squads within an Agile methodology, where we complete two-week
-          sprints, conduct daily stand-up meetings, and utilize other Agile
-          techniques.
+          I studied systems engineering at UTFPR. Currently, I have nearly one
+          year of experience working with React and TypeScript. I'm proficient
+          in HTML, CSS, JavaScript, Redux, styled-components, and Material UI. I
+          have experience working in squads within an Agile methodology, where
+          we complete two-week sprints, conduct daily stand-up meetings, and
+          utilize other Agile techniques.
           <Topic>ASD:</Topic> I'm also on the autism spectrum and have been
           diagnosed with Autism Spectrum Disorder (ASD). While I don't know
           everything about the subject, my personal experience with ASD has
@@ -43,7 +37,7 @@ const AboutMe = () => {
           <Image src={images.bjj} alt="bjj" />
           <Image src={images.boulder} alt="boulder" />
         </div>
-      </div>
+      </About>
     </Container>
   );
 };
