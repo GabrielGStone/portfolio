@@ -29,7 +29,6 @@ const Hello = () => {
           <ArrowDown onClick={() => handleNavClick("About")}>⬇</ArrowDown>
         )}
       </Container>
-      ;
     </>
   );
 };
