@@ -39,6 +39,12 @@ const Home = () => {
           text={texts.todoText}
           image={images.todoImage}
         ></Project>
+        <Project
+          title={texts.pokedexTitle}
+          link={texts.pokedexLink}
+          text={texts.pokedexText}
+          image={images.pokedexImage}
+        ></Project>
         {/* </ViewComponent> */}
         {/* <ViewComponent> */}
         <Id id="Contact" />
