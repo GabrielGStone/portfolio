@@ -20,7 +20,7 @@ const AboutMe = () => {
           everything about the subject, my personal experience with ASD has
           given me unique insights into the challenges and strengths that come
           with being on the spectrum. I believe that my attention to detail,
-          focus, and analytical thinking are some of my greatest strengths that
+          focus, and analytical thinking are some of my greatest strengths.
           <Topic>Interests:</Topic> When I'm not working, I enjoy playing games
           such as Starcraft 2, World of Warcraft, LoL, and TFT. I find that
           games can be a great way to exercise cognitive skills, such as
