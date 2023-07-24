@@ -25,7 +25,7 @@ export const texts = [
   },
   {
     title: "Lading Page",
-    text: "prototype of a landing page developed using React and Styled Components. The goal is to create a responsive and interactive interface, replicating the layout provided in the prototype.",
+    text: "Prototype of a landing page developed using React and Styled Components. The goal is to create a responsive and interactive interface, replicating the layout provided in the prototype.",
     link: "https://nerdweb-landingpage.netlify.app/",
     image: landing,
   },
