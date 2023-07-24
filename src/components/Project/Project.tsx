@@ -10,10 +10,10 @@ import {
 } from "./styles";
 
 interface projectProps {
-  title: string;
-  image: string;
-  link: string;
-  text: string;
+  title?: string;
+  image?: string;
+  link?: string;
+  text?: string;
 }
 
 const Project: FC<projectProps> = ({ image, link, text, title }) => {

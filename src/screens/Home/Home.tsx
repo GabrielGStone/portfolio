@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 import Hello from "../../components/Hello/Hello";
 import Layout from "../../components/Layout/Layout";
 import Project from "../../components/Project/Project";
-import { images, texts } from "./constants";
+import { texts } from "./constants";
 import { Id } from "./styles";
 
 const Home = () => {
@@ -14,43 +14,22 @@ const Home = () => {
       <Layout>
         <Id id="Home" />
         <Hello />
-        {/* <ViewComponent> */}
         <Id id="About" />
-
         <AboutMe />
-        {/* </ViewComponent> */}
-        {/* <ViewComponent> */}
         <Id id="Projects" />
-
         <h2 style={{ marginTop: "64px" }}>Projects</h2>
-        {/* </ViewComponent>
-        <ViewComponent> */}
-        <Project
-          title={texts.tryndaTitle}
-          link={texts.tryndaLink}
-          text={texts.tryndaText}
-          image={images.tryndaImage}
-        ></Project>
-        {/* </ViewComponent> */}
-        {/* <ViewComponent> */}
-        <Project
-          title={texts.todoTitle}
-          link={texts.todoLink}
-          text={texts.todoText}
-          image={images.todoImage}
-        ></Project>
-        <Project
-          title={texts.pokedexTitle}
-          link={texts.pokedexLink}
-          text={texts.pokedexText}
-          image={images.pokedexImage}
-        ></Project>
-        {/* </ViewComponent> */}
-        {/* <ViewComponent> */}
+        {texts.map(({ title, link, text, image }) => {
+          return (
+            <Project
+              title={title}
+              link={link}
+              text={text}
+              image={image}
+            ></Project>
+          );
+        })}
         <Id id="Contact" />
-
         <Footer />
-        {/* </ViewComponent> */}
       </Layout>
     </>
   );
