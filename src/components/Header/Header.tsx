@@ -81,7 +81,7 @@ const Header = () => {
               onClick={() => setMenuOpen(!menuOpen)}
             />
           ) : (
-            <Menu setMenuOpen={setMenuOpen} />
+            <Menu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
           )}
         </>
       )}

@@ -9,11 +9,11 @@ const AboutMe = () => {
       <About style={{ display: "flex", justifyContent: "space-between" }}>
         <Wrap>
           <Topic>Professional:</Topic> My name is Gabriel, and I'm 24 years old.
-          I studied systems engineering at UTFPR. Currently, I have nearly one
-          year of experience working with React and TypeScript. I'm proficient
-          in HTML, CSS, JavaScript, Redux, styled-components, and Material UI. I
-          have experience working in squads within an Agile methodology, where
-          we complete two-week sprints, conduct daily stand-up meetings, and
+          I studied systems engineering at UTFPR. Currently, I have one year of
+          experience working with React and TypeScript. I'm proficient in HTML,
+          CSS, JavaScript, Redux, styled-components, and Material UI. I have
+          experience working in squads within an Agile methodology, where we
+          complete two-week sprints, conduct daily stand-up meetings, and
           utilize other Agile techniques.
           <Topic>ASD:</Topic> I'm also on the autism spectrum and have been
           diagnosed with Autism Spectrum Disorder (ASD). While I don't know
@@ -27,11 +27,11 @@ const AboutMe = () => {
           problem-solving, strategic thinking, and decision-making. Playing
           games can also help with stress relief and provide an opportunity for
           social interaction and community building. Additionally, I like to
-          stay active by practicing jiu-jitsu, which I've been doing for eight
-          months, and indoor bouldering, which I've been doing for five years.
-          These activities help me stay sharp both mentally and physically.
-          Thanks for taking the time to get to know me better. If you have any
-          questions or would like to chat more, feel free to reach out!
+          stay active by practicing jiu-jitsu, which I've been doing for a year,
+          and indoor bouldering, which I've been doing for five years. These
+          activities help me stay sharp both mentally and physically. Thanks for
+          taking the time to get to know me better. If you have any questions or
+          would like to chat more, feel free to reach out!
         </Wrap>
         <div style={{ width: "300px" }}>
           <Image src={images.bjj} alt="bjj" />

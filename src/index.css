@@ -1,23 +1,20 @@
-*{
+* {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
-  font-family:sans-serif, "roboto";
-  
-};
-/* width */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "roboto";
+}
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(225, 41, 41);
+  background: #ddd;
+
   border-radius: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: #333;
   border-radius: 10px;
 }

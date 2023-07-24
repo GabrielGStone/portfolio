@@ -9,7 +9,7 @@ const Footer = () => {
       <Number>email: anjogabriel986@gmail.com</Number>
       <Wrap>
         <a
-          href=" https://www.linkedin.com/in/gabriel-rocha-3800b5239/"
+          href=" https://www.linkedin.com/in/gabrielstone986/"
           target="_blank"
           rel="noreferrer"
         >

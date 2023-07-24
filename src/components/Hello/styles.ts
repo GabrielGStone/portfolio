@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   /* z-index: 0; */
   padding-top: 12%;
   font-size: 112px;
   font-weight: 600;
   @media (max-width: 1000px) {
     /* height: auto; */
+    flex-direction: column;
+    justify-content: center;
+
     font-size: 90px;
   }
 `;
@@ -35,5 +39,15 @@ export const ArrowDown = styled.div`
   animation: bounce 2s infinite;
   /* margin-top: 30px; */
   text-align: center;
-  margin: 8% 0;
+`;
+
+export const ProfileImage = styled.img`
+  height: 50vh;
+  border-radius: 50%;
+  margin-top: -100px;
+  border: "1px #000 solid";
+  @media (max-width: 1000px) {
+    /* height: auto; */
+    height: 0;
+  }
 `;

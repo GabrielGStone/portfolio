@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Container, ArrowDown } from "./styles";
+import { Container, ArrowDown, ProfileImage } from "./styles";
+import profile from "../../assets/profile.jpg";
 
 const Hello = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -25,6 +26,7 @@ const Hello = () => {
     <>
       <Container>
         <span style={{ marginBottom: "100px" }}>Hello, I'm Gabriel</span>
+        <ProfileImage src={profile} alt="profileImg" />
         {screenWidth < 1000 && (
           <ArrowDown onClick={() => handleNavClick("About")}>⬇</ArrowDown>
         )}

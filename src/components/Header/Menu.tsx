@@ -3,9 +3,10 @@ import { MenuNavButtons, MenuNavContainer, MenuBar, CloseMenu } from "./styles";
 
 interface menuProps {
   setMenuOpen: any;
+  menuOpen?: boolean;
 }
 
-const Menu: FC<menuProps> = ({ setMenuOpen }) => {
+const Menu: FC<menuProps> = ({ setMenuOpen, menuOpen }) => {
   const [isActive, setIsActive] = useState("");
 
   const handleNavClick = (id: string) => {
@@ -23,7 +24,7 @@ const Menu: FC<menuProps> = ({ setMenuOpen }) => {
   };
 
   return (
-    <MenuBar>
+    <MenuBar menuOpen={menuOpen}>
       <MenuNavContainer id="menu-bar">
         <CloseMenu onClick={() => handleCloseMenu()}>x</CloseMenu>
         <MenuNavButtons

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface ContainerProps {
   padding: string;
@@ -74,7 +74,10 @@ export const MenuNavButtons = styled.div<navProps>`
   }
 `;
 
-export const MenuBar = styled.div`
+interface menuProps {
+  menuOpen?: boolean;
+}
+export const MenuBar = styled.div<menuProps>`
   display: flex;
   font-size: 32px;
   width: 100%;
@@ -83,12 +86,22 @@ export const MenuBar = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0%);
+  transition: 0.2s;
 
-  &.closed {
-    transform: translateX(100%);
-  }
+  ${({ menuOpen }) =>
+    menuOpen
+      ? css`
+          width: 100vw;
+          top: 0;
+          height: 100vh;
+          left: 0;
+        `
+      : css`
+          right: 1;
+          width: 0;
+          height: 0;
+          padding: 0;
+        `};
 `;
 
 export const MenuNavContainer = styled.div`
